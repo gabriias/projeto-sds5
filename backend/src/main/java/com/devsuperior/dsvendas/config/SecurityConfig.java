@@ -18,6 +18,7 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
+	//essa anotação faz a instância do Environment automaticamente sem precisar do 'new'
 	@Autowired
 	private Environment env;
 
