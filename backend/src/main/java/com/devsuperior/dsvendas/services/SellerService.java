@@ -20,7 +20,7 @@ public class SellerService {
 	
 	public List<SellerDTO> findAll(){
 		List<Seller> result = repository.findAll();
-		//para cada item da lista de Seller, é criado um objeto SellerDTO e depois todos os objetos sãoa grupados numa lista de SellerDTO
+		//para cada item da lista de Seller, é criado um objeto SellerDTO e depois todos os objetos são agrupados numa lista de SellerDTO
 		return result.stream().map(x -> new SellerDTO(x)).collect(Collectors.toList());
 	}
 
